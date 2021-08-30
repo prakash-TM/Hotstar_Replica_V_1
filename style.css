@@ -1,0 +1,330 @@
+.header{
+    
+    display: flex;
+    position:fixed;
+    background-color: #1e2636;
+    width: 80rem;
+    height: 4rem;
+    top: 0%;
+    left: 0%;
+}
+.hamburger{
+    height: 2px;
+    width: 18px;
+    background-color: rgb(195, 199, 202);
+    margin: 2px 3px 2px 0;
+    border-radius: 3px;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.header-menu-left{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+   
+}
+.header-menu-left:hover{
+    cursor: pointer;
+}
+.header-menu-li-space{
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+    padding:0 15px;
+    color: rgb(195, 199, 202);
+}
+
+/* drop down property start*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212a41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: rgb(195, 199, 202);
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+  }
+  .dropdown-content a:hover {
+      background-color: #141929;
+    }
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+  /* drop down property end*/
+  .header-menu-right{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+   margin-left: 275px;
+    list-style-type: none;
+   
+}
+
+/* search area and place holder property started*/
+
+::placeholder {
+    color: rgb(195, 199, 202);
+  }
+  .class-n{
+      color: rgb(195, 199, 202);
+      margin-top: 12px;
+      padding-bottom: 5px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom:2px solid rgb(195, 199, 202) ;
+      background-color: #1e2636;
+  }
+  .class-n:focus{
+      border-left: none;
+      border-top: none;
+      border-right: none;
+  }
+
+/* search area and place holder property started*/
+
+.search-icon-style{
+    display: flex;
+   margin-left: -15px;
+   margin-top: 15px;
+    height: 12px;
+    width: 13px;
+}
+.subcribe-button{
+    margin-top: 15px;
+    margin-left: 15px;
+        background-color: #3a66dd;
+        color: white;
+        padding: 5px;
+        font-size: 8px;
+        border: none;
+        border-radius: 3px;
+        font-weight:750;
+}
+.subcribe-button:hover{
+    cursor: pointer;
+}
+.login-style{
+    margin-top: 18px;
+    margin-left: 15px;
+    color: rgb(195, 199, 202);
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-style:hover{
+    cursor: pointer;
+}
+
+/* content part */
+.body-content{
+   margin-top: 64px;
+   margin-left: -8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 110%;
+    height: 280vh;
+    background-color: #030B17;
+}
+
+.body-content-movable{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    height: 69.4vh;
+}
+.body-content-movable:hover{
+    cursor: pointer;
+}
+
+.body-content-movable-left{
+   font-family: "Roboto","HelveticaNeue-Light",sans-serif ;
+    
+    padding: 110px 0px 28px 75px;
+    width:22rem;
+    color: white;
+}
+.body-content-movable-right{
+    padding-left: 110px;
+    height: 50px;
+}
+
+.background-gradient{
+    background-image:linear-gradient(to right, #030b17,rgba(255, 255, 255, 0.034)),url(./assets/content-img-1.jfif);
+    width: 1670%;
+    height: 400px;
+    border-radius: 10px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+.item-list1{
+    margin-left: 10px;
+    margin-top: 60px;
+   
+}
+.item-list2{
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
+.item-list3{
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
+.item-list-title{
+    color:white; 
+    padding-left: 20px; 
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+}
+.item-list-img{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.item-img{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.item-img:hover
+{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.example {
+    position: relative;
+    width: 160px;
+    height: 214px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+   
+  }
+  .example:hover {
+   
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  .content {
+    opacity: 0;
+   
+    position: absolute;
+    top: 0;
+    background-image:linear-gradient(to top, #122030,rgba(209, 209, 209, 0.014));
+    color: #d1d1d1;
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+    font-size: 8px;
+   line-height: 9px;
+    height: 200px;
+    width: 150px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+   
+  }
+  .example .content:hover {
+    opacity: 1;
+   
+  }
+  .example .content .text {
+    height: 100;
+    padding-left: 5px;
+ 
+    
+  }
+  .example .content:hover .text {
+    transform: translateY(100px);
+  }
+.hov-con{
+  
+   margin-left: -2px;
+   padding-top: 5px;
+    height: 11px;
+    width: 140px;
+}
+.hov-con:hover{
+    background-color: rgba(20, 20, 36, 0.87);
+}
+/* footer part */
+
+.footer-part{
+    display: flex;
+    flex-direction: row;
+
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 30px;
+    font-size: 13px;
+    color: aliceblue;
+    font-family:"Roboto","HelveticaNeue-Light",sans-serif 
+}
+
+
+.footer-menu-single:hover:hover{
+    cursor: pointer;
+    color: blue;
+}
+.footer-description{
+    
+    font-family:"Roboto","HelveticaNeue-Light",sans-serif ;
+    font-size: 12px;
+    color: rgb(236, 230, 222);
+    padding-left: 30px;
+    padding-right: 800px;
+    margin-top: -46px;
+}
+.footer-social-media{
+    font-family:"Roboto","HelveticaNeue-Light",sans-serif ;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 43px;
+    color: rgb(236, 230, 222);
+    margin-left: -650px;
+}
+.social-media-img{
+    width: 100px;
+    height: 50px;
+}
+.app-media-img{
+    width: 200px;
+    height: 50px;
+}
+.footer-application{
+    font-family:"Roboto","HelveticaNeue-Light",sans-serif ;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 43px;
+    color: rgb(236, 230, 222);
+    margin-left: -400px;
+}
